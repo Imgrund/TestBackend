@@ -50,13 +50,13 @@ public class Zaehler {
 	public String toString()
 	{
 		if(this.zaehlerart.equals("gas")) {
-			return Long.toString(this.id) + "; " + this.date + "; " + this.zaehlerStand +" m\u00B3; "+ this.zaehlerart;
+			return Long.toString(this.id) + ";" + this.date + ";" + this.zaehlerStand +" m3;"+ this.zaehlerart;
 		}
 		else if(this.zaehlerart.equals("electric")) {
-			return Long.toString(this.id) + "; " + this.date + "; " + this.zaehlerStand +" kWh; "+ this.zaehlerart;
+			return Long.toString(this.id) + ";" + this.date + ";" + this.zaehlerStand +" kWh;"+ this.zaehlerart;
 		}
 		else if(this.zaehlerart.equals("water")) {
-			return Long.toString(this.id) + "; " + this.date + "; " + this.zaehlerStand +" m\u00B3; "+ this.zaehlerart;
+			return Long.toString(this.id) + ";" + this.date + ";" + this.zaehlerStand +" m3;"+ this.zaehlerart;
 		}
 		else return Long.toString(this.id) + this.zaehlerart;
 	}
